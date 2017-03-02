@@ -15,11 +15,11 @@ img {
 }
 
 body {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Segoe UI", "Helvetica", Helvetica, Arial, Tahoma, sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 14px;
   height: 100% !important;
-  line-height: 1.6em;
+  line-height: $body-line-height;
   margin: 0;
   padding: 0;
   -ms-text-size-adjust: 100%;
@@ -35,7 +35,7 @@ table {
   width: 100%;
 
   td {
-    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: "Segoe UI", "Helvetica", Helvetica, Arial, Tahoma, sans-serif;
     font-size: 14px;
     vertical-align: top;
   }

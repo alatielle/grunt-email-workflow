@@ -6,7 +6,8 @@
   width: 100%;
 
   > tr > td {
-    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 4px;
   }
 
   table {
@@ -16,22 +17,26 @@
   table td {
     background-color: #ffffff;
     border-radius: $btn-br;
+    border-bottom: 2px solid #426f55;
     text-align: center;
+    width: 80%;
+    max-width: 290px;
   }
 
   a{
     background-color: #ffffff;
-    border: solid 1px $primary-color;
+    border: solid 1px $primary-btn-color;
     border-radius: $btn-br;
     color: $primary-color;
     cursor: pointer;
     display: inline-block;
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: normal;
     margin: 0;
-    padding: 12px 25px;
+    padding: 7px 40px;
     text-decoration: none;
-    text-transform: capitalize;
+    text-transform: none;
+    width: 100%;
   }
 }
 
@@ -39,12 +44,12 @@
 .btn-primary {
 
   table td {
-    background-color: $primary-color;
+    background-color: $primary-btn-color;
   }
 
   a{
-    background-color: $primary-color;
-    border-color: $primary-color;
+    background-color: $primary-btn-color;
+    border-color: $primary-btn-color;
     color: #ffffff;
   }
 }

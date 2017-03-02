@@ -1,13 +1,15 @@
 ---
 layout: default.hbs
-subject: Branded transaction email example
+subject: Вход в сервис Контур.Фокус
 ---
-<span class="preheader">This is preheader text. Some clients will show this text as a preview.</span>
+<span class="preheader">Вход в сервис Контур.Фокус</span>
 <div class="header">
   <table>
     <tr>
       <td class="align-center">
-        <a href="http://www.mailgun.com"><img src="../src/img/mailgun.png" height="50" alt="Mailgun"></a>
+        <a href="https://focus.kontur.ru" target="_blank" title="Контур.Фокус">
+            <img alt="Контур.Фокус" src="../src/img/letter-logo.png" width="210" height="29">
+        </a>
       </td>
     </tr>
   </table>
@@ -17,10 +19,9 @@ subject: Branded transaction email example
     <td class="wrapper">
       <table>
         <tr>
-          <td>
-            <p>Example of an email with image asset.</p>
-            <p>You should upload your email images to a CDN, or for smaller file sizes you can also inline them.</p>
-            <p>Should come in handy for branded transactional emails or promotional type emails.</p>
+          <td class="align-center">
+            <p>Вы&nbsp;получили&nbsp;одноразовую ссылку для&nbsp;входа в&nbsp;Контур.Фокус</p>
+            {{> button type="primary" align="center" url="LINK GOES HERE" title="Войти в&nbsp;сервис" }}
           </td>
         </tr>
       </table>
@@ -28,10 +29,17 @@ subject: Branded transaction email example
   </tr>
 </table>
 <div class="footer">
-  <table>
+  <table class="align-center">
     <tr>
       <td class="align-center">
-        <p>{{> follow_lee }}</p>
+          <p>Это&nbsp;письмо было отправлено, потому что вы указали адрес электронной почты при входе в&nbsp;<a href="https://focus.kontur.ru/">Контур.Фокус</a>.</p>
+          <p>Если у вас возникли вопросы, звоните <a class="nowrap" href="tel:88005001644">8&nbsp;800&nbsp;500-16-44</a> или&nbsp;пишите на&nbsp;<a href="mailto:focus@kontur.ru">focus@kontur.ru</a></p>
+          <p class="last">Содержимое ссылки для копирования:</p>
+          <p class="last">
+              <a class="breakable" href="#">
+                  https://focus.kontur.ru/proceed?back=https%3a%2f%2ffocus.kontur.ru%2fselection%2ffilter&mutoken=dxB1mvZsLfX59p4svTFgTZHJ3DLDVqDT68NlCVcxAMMf3KbRyoDhZvKNg8tA14gk6-7wlqD232uiEr5KSJ8YfOBzU0aN-IXGfogEvWBLQmyRUBKtNhZMUg2
+              </a>
+          </p>
       </td>
     </tr>
   </table>

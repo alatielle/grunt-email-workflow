@@ -26,6 +26,16 @@
   clear: both;
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
+.breakable {
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
+
 .mt0 {
   margin-top: 0;
 }
